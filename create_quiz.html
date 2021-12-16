@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Quiz</title>
+</head>
+<body>
+    <h1>Create Quiz</h1>
+    
+    <form action="questions.php" method="post">
+
+    <label>Enter Name of Quiz</label>
+    <input type="text" name="quiz_name" id="quiz_name">
+
+    <br><br><label>Enter Quiz ID</label>
+    <input type="number" name="ID" id="ID">
+
+    <br><br><label>Enter Number of Questions to be Created</label>
+    <input type="number" name="questions_number" id="questions_number">
+
+    <br><br><label>Enter Name of Author</label>
+    <input type="text" name="author" id="author">
+
+    <br><br><label>Enter Availability</label>
+    <input type="radio" name="ava" value="Yes">
+    <label for="Yes">Yes</label>
+
+    <input type="radio" name="ava" value="No">
+    <label for="No">No</label><br>
+
+
+    <br><br><label>Enter Time Limit for Quiz</label>
+    <input type="number" name="time" id="time">
+
+    <button type="submit">Create Quiz</button>
+    </form>
+    
+
+</body>
+</html>

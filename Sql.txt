@@ -1,0 +1,9 @@
+//Create Database 
+CREATE DATABASE IF NOT EXISTS quiz;
+
+//Create Tables
+CREATE TABLE IF NOT EXISTS `quiz`.`quiz details` ( `Quiz ID` INT(5) NOT NULL , `Quiz Name` VARCHAR(100) NOT NULL , `Quiz Author` VARCHAR(150) NOT NULL , `Quiz Available` VARCHAR(5) NOT NULL , `Quiz Duration` VARCHAR(5) NOT NULL , PRIMARY KEY (`Quiz ID`)) ENGINE = InnoDB; 
+CREATE TABLE IF NOT EXISTS `quiz`.`student` ( `Student ID` INT(5) NOT NULL , `Student Name` VARCHAR(150) NOT NULL , `Date of Attempt` DATE NOT NULL , PRIMARY KEY (`Student ID`)) ENGINE = InnoDB; 
+CREATE TABLE IF NOT EXISTS `quiz`.`quiz` ( `Quiz ID` INT(5) NOT NULL , `Question Number` INT(5) NOT NULL , `Questions` TEXT NOT NULL , `Option 1` TEXT NOT NULL , `Option 2` TEXT NOT NULL , `Option 3` TEXT NOT NULL , `Option 4` TEXT NOT NULL , PRIMARY KEY (`Quiz ID`)) ENGINE = InnoDB; 
+CREATE TABLE IF NOT EXISTS `quiz`.`score` ( `Username` VARCHAR(150) NOT NULL , `Type` VARCHAR(100) NOT NULL , `Quiz ID` INT(5) NOT NULL , `Score` INT(10) NOT NULL , PRIMARY KEY (`Username`)) ENGINE = InnoDB; 
+CREATE TABLE IF NOT EXISTS `quiz`.`user` ( `Username` VARCHAR(150) NOT NULL , `Name` VARCHAR(150) NOT NULL , `Email` VARCHAR(200) NOT NULL , `password` VARCHAR(150) NOT NULL , `Type` VARCHAR(100) NOT NULL , PRIMARY KEY (`Username`), UNIQUE (`Email`)) ENGINE = InnoDB; 

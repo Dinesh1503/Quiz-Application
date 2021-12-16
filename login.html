@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+</head>
+<body>
+   
+
+    <h1>Quiz Application</h1>
+    
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <label class = "name">Name</label><br>
+    	<input type="text" name="name" value="" placeholder="">
+    	
+        <br><br><label class = "email">Email</label><br>
+        <input type="email" name="email" value="" placeholder="">
+
+        <br><br><input type="radio" id="student" name="type" value="student">
+        <label for="student">Student</label><br>
+        <br><input type="radio" id="staff" name="type" value="staff">
+        <label for="staff">Staff</label><br>
+    	
+        <br><br><label>Username</label><br>
+    	<input type="text" name="username" value="" placeholder="">
+    	
+        <br><br><label>Password</label><br>
+    	<input type="password" name="password" value="" placeholder="">
+    	
+        <input type="submit" name="register" value="Register">
+    </form>
+
+    <h2 class="login">Login</h2>    
+    <form action="login.php" method="post">    	
+        <label>Username</label><br>
+    	<input type="text" name="username" value="" placeholder="">
+    	
+        <br><br><label>Password</label><br>
+    	<input type="password" name="password" value="" placeholder="">
+    	
+        <input type="submit" name="login" value="Login">
+    </form>
+
+</body>
+</html>
